@@ -4,7 +4,7 @@ from omegaconf import DictConfig
 from lightning.pytorch import LightningModule
 import torch
 from torch import nn
-from torch.optim import Adam
+from torch.optim import Adam,AdamW
 from torch.optim.lr_scheduler import MultiStepLR
 from torchtyping import TensorType
 import torchvision.models as tvmodels
