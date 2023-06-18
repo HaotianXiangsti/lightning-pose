@@ -8,9 +8,9 @@ data:
     height: 256
     width: 384
   # ABSOLUTE path to data directory
-  data_dir: "/datastores/mirror-fish"
+  data_dir: "/content/drive/MyDrive/mirror-fish"
   # ABSOLUTE path to unlabeled videos' directory
-  video_dir: "/datastores/mirror-fish/videos"
+  video_dir: "/content/drive/MyDrive/mirror-fish"
   # location of labels; for example script, this should be relative to `data_dir`
   csv_file: "CollectedData.csv"
   # header rows to strip in label csv file
