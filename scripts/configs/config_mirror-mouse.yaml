@@ -8,9 +8,9 @@ data:
     height: 256
     width: 256
   # ABSOLUTE path to data directory
-  data_dir: "/home/zeus/content/lightning-pose/data/mirror-mouse"
+  data_dir: "/content/drive/MyDrive/mirror-mouse"
   # ABSOLUTE path to unlabeled videos' directory
-  video_dir: "/home/zeus/content/lightning-pose/data/mirror-mouse/videos"
+  video_dir: "/content/drive/MyDrive/mirror-mouse"
   # location of labels; for example script, this should be relative to `data_dir`
   csv_file: "CollectedData.csv"
   # header rows to strip in label csv file
