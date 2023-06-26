@@ -5,7 +5,7 @@ from lightning.pytorch import LightningModule
 import torch
 from torch import nn
 from torch.optim import Adam,AdamW
-from torch.optim.lr_scheduler import MultiStepLR
+from torch.optim.lr_scheduler import MultiStepLR, CosineAnnealingWarmRestarts
 from torchtyping import TensorType
 import torchvision.models as tvmodels
 from typeguard import typechecked
@@ -346,7 +346,7 @@ class BaseFeatureExtractor(LightningModule):
         optimizer = Adam(params, lr=1e-3)
 
         # get learning rate scheduler
-        scheduler = self.get_scheduler(optimizer)
+        scheduler = CosineAnnealingWarmRestarts(optimizer, T_0=20, T_mult=1, eta_min=0, last_epoch=- 1, verbose=False)#self.get_scheduler(optimizer)
 
         return {
             "optimizer": optimizer,
