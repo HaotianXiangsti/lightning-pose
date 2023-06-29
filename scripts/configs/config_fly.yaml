@@ -8,9 +8,9 @@ data:
     height: 256
     width: 256
   # ABSOLUTE path to data directory
-  data_dir: "/datastores/fly"
+  data_dir: "/content/drive/MyDrive/fly"
   # ABSOLUTE path to unlabeled videos' directory
-  video_dir: "/datastores/fly/videos"
+  video_dir: "/content/drive/MyDrive/fly"
   # location of labels; for example script, this should be relative to `data_dir`
   csv_file: "CollectedData.csv"
   # header rows to strip in label csv file
@@ -20,7 +20,7 @@ data:
   # total number of body parts
   num_keypoints: 8
   # base path for saving
-  # save_dir- "/media/mattw/behavior/results/pose-estimation"
+  # save_dir- "/content/drive/MyDrive/Fly Dataset Outputs"
   columns_for_singleview_pca: [0, 1, 2, 3, 4, 5, 6, 7]
 
 training:
@@ -167,7 +167,7 @@ eval:
   # (it's not absolute just for the toy example)
   test_videos_directory: "/datastores/fly/videos_new"
   # str with an absolute path to directory in which you want to save .csv with predictions
-  saved_vid_preds_dir: "/home/jovyan"
+  saved_vid_preds_dir: "/content/drive/MyDrive/fly/videos_new"
   # create labeled video from each video in test_videos_directory
   create_labeled_video: false
   # confidence threshold for plotting a vid
