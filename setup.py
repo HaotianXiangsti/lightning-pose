@@ -1,7 +1,7 @@
 #:!/usr/bin/env python
 from setuptools import find_packages, setup
 import subprocess
-import re
+import re #
 
 VERSION = "0.0.1"  # was previously None
 
